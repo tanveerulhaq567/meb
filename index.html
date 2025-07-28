@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Journey Advisor - Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<main id="home-main">
+  <!-- Image Slider -->
+  <div id="home-slider">
+    <div class="home-slide fade">
+      <img src="images/1.jpg" alt="Sustainable Travel" class="home-slide-img">
+    </div>
+    <div class="home-slide fade">
+      <img src="images/2.jpg" alt="Eco Transportation" class="home-slide-img">
+    </div>
+    <div class="home-slide fade">
+      <img src="images/3.jpg" alt="Plan Your Route" class="home-slide-img">
+    </div>
+  </div>
+
+
+  <!-- Logo Icon -->
+  <div id="home-logo-container">
+    <img src="images/icon.png" alt="Green Journey Advisor Logo" id="home-logo">
+  </div>
+
+  <!-- Welcome Note -->
+  <section id="home-welcome">
+    <h1>Welcome to Green Journey Advisor</h1>
+    <p>Your assistant for planning eco-friendly, efficient travel routes.</p>
+  </section>
+
+  <!-- Start Button -->
+  <div id="home-start-container">
+    <a href="journey.html" id="home-start-button">Plan My Journey</a>
+  </div>
+</main>
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Green Journey Advisor. All rights reserved.</p>
+  </footer>
+
+  <!-- Optional JS for auto slider -->
+  <script>
+    let homeSlideIndex = 0;
+    showHomeSlides();
+
+    function showHomeSlides() {
+      let i;
+      let slides = document.getElementsByClassName("home-slide");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      homeSlideIndex++;
+      if (homeSlideIndex > slides.length) { homeSlideIndex = 1 }
+      slides[homeSlideIndex - 1].style.display = "block";
+      setTimeout(showHomeSlides, 3000); // Change image every 3 seconds
+    }
+  </script>
+
+
+</body>
+</html>

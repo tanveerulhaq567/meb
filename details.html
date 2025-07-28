@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Journey Advisor - Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner Area -->
+  <section id="banner">
+    <div id="banner-icon">
+      <img src="images/icon.png" alt="Journey Icon">
+    </div>
+    <div id="banner-text">
+      <h1>Plan Your Journey</h1>
+    </div>
+  </section>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="journey.html" class="nav-link">Plan</a>
+    <a href="results.html" class="nav-link">Result</a>
+    <a href="details.html" class="nav-link">Detail</a>
+    <a href="saved.html" class="nav-link">Saved</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+
+  <div id="saveMessage" style="display:none; color: green; margin-top: 1rem;">
+  ✅ Journey saved!
+  </div>
+
+
+  <main id="details-main">
+  <h2>Travel Option Details</h2>
+
+  <section class="detail-card">
+    <div class="detail-icon">🚆</div>
+
+    <div class="detail-info">
+      <h3>GreenLine Express (Train)</h3>
+      <p><strong>Departure:</strong> Central Station, 10:30 AM</p>
+      <p><strong>Arrival:</strong> Eco City Terminal, 12:45 PM</p>
+      <p><strong>Estimated Duration:</strong> 2 hrs 15 mins</p>
+      <p><strong>Eco Score:</strong> ★★★★☆</p>
+      <p><strong>CO₂ Reduction:</strong> 65% compared to car travel</p>
+      <p><strong>Fare:</strong> €12.00</p>
+    </div>
+  </section>
+
+  <section class="detail-map">
+    <h4>Route Map</h4>
+    <img src="assets/greenline-map-placeholder.jpg" alt="GreenLine Route Map" />
+  </section>
+
+  <div class="btn-row">
+    <button class="back-button">← Back to Results</button>
+    <button class="book-button">Save this journey</button>
+    <a class="book-button" href="saved.html" >View Saved Journeys</a>
+  </div>
+
+</main>
+
+ 
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Green Journey Advisor. All rights reserved.</p>
+  </footer>
+  
+<script src="details.js"></script>
+
+</body>
+</html>

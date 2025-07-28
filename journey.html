@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Journey Advisor - Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner Area -->
+  <section id="banner">
+    <div id="banner-icon">
+      <img src="images/icon.png" alt="Journey Icon">
+    </div>
+    <div id="banner-text">
+      <h1>Plan Your Journey</h1>
+    </div>
+  </section>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="journey.html" class="nav-link">Plan</a>
+    <a href="results.html" class="nav-link">Result</a>
+    <a href="details.html" class="nav-link">Detail</a>
+    <a href="saved.html" class="nav-link">Saved</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+
+  <!-- Journey Input Fields -->
+  <section id="plan-inputs">
+    <div class="input-group">
+      <label for="startCity">Start:</label>
+      <input type="text" id="startCity" name="startCity" placeholder="Enter starting city">
+      <div id="startSuggestions" class="suggestions"></div>
+    </div>
+
+    <div class="input-group">
+      <label for="endCity">End:</label>
+      <input type="text" id="endCity" name="endCity" placeholder="Enter destination city">
+      <div id="endSuggestions" class="suggestions"></div>
+    </div>
+  </section>
+
+
+  <!-- Preferences Section -->
+  <section id="plan-preferences">
+    <h2>Preferences</h2>
+
+  <!-- Mode of Transport -->
+  <div class="plan-pref-group">
+    <p><strong>Mode of Transport:</strong></p>
+    <label><input type="checkbox" name="transport" value="bus"> Bus</label><br>
+    <label><input type="checkbox" name="transport" value="train"> Train</label><br>
+    <label><input type="checkbox" name="transport" value="bike"> Bicycle</label><br>
+    <label><input type="checkbox" name="transport" value="walk"> Walk</label>
+  </div>
+
+  <!-- Eco Preference -->
+  <div class="plan-pref-group">
+    <p><strong>Eco Preference:</strong></p>
+    <label><input type="checkbox" name="eco" value="max-sustain"> Max Sustainability</label><br>
+    <label><input type="checkbox" name="eco" value="balanced"> Balanced (eco + time)</label><br>
+    <label><input type="checkbox" name="eco" value="fastest"> Fastest Option</label>
+  </div>
+
+  <!-- Time Preference -->
+  <div class="plan-pref-group">
+    <p><strong>Time of Day:</strong></p>
+    <label><input type="checkbox" name="time" value="morning"> Morning</label><br>
+    <label><input type="checkbox" name="time" value="afternoon"> Afternoon</label><br>
+    <label><input type="checkbox" name="time" value="evening"> Evening</label>
+  </div>
+
+  <!-- Show Results Button -->
+  <form id="journeyForm">
+    <!-- Your inputs here -->
+    <div class="plan-submit-container">
+      <button type="submit" id="plan-show-button">Show Results</button>
+    </div>
+  </form>
+  </section>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Green Journey Advisor. All rights reserved.</p>
+  </footer>
+
+<!-- Load journey data first -->
+<script src="journeys.js"></script>
+
+<!-- Then load your autocomplete + UI logic -->
+<script src="journey.js"></script>
+
+</body>
+</html>

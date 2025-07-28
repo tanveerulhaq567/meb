@@ -1,0 +1,621 @@
+/* === All Pages Common Styles === */
+/* General Reset */
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+/*
+body {
+  background-color: #f2fdf6;
+  color: #2e4d36;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+*/
+
+body {
+  background-color: #f2fdf6;
+  color: #2e4d36;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+main, section {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+
+/* Banner Section */
+#banner {
+  background-color: #e0f6e6;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.15);
+}
+
+#banner-icon img {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+  border-radius: 30%;
+}
+
+#banner-text h1 {
+  font-size: 32px;
+  color: #1e8f39;
+  text-shadow: 0 0 8px #6bd27c;
+}
+
+/* Navigation Bar */
+#navbar {
+  background-color: #2e8b57;
+  display: flex;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.nav-link {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #b2ffd3;
+}
+
+/* === Home Page Styles === */
+/* Body Styling */
+
+#home-main{
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Slider Section */
+#home-slider {
+  width: 100%;
+  max-width: 1000px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  margin-top: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.2);
+}
+
+.home-slide {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+.home-slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+/* Logo Styling */
+#home-logo-container {
+  margin: 30px 0 10px 0;
+  text-align: center;
+  border-radius: 50%;
+}
+
+#home-logo {
+  width: 200px;
+  height: 200px;
+  margin: 10px;;
+}
+
+/* Welcome Text */
+#home-welcome {
+  text-align: center;
+  padding: 20px;
+  max-width: 700px;
+}
+
+#home-welcome h1 {
+  font-size: 28px;
+  color: #1e6230;
+  margin-bottom: 10px;
+}
+
+#home-welcome p {
+  font-size: 16px;
+  color: #40644f;
+}
+
+/* Start Button */
+#home-start-container {
+  margin: 20px 0 40px 0;
+}
+
+#home-start-button {
+  background-color: #2e8b57;
+  color: white;
+  padding: 12px 25px;
+  font-size: 16px;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#home-start-button:hover {
+  background-color: #246947;
+}
+
+/* === Journey Page Styles === */
+/* Journey Input Section */
+#plan-inputs {
+  max-width: 600px;
+  margin: 60px auto 40px auto; /* increased top margin */
+  padding: 20px;
+  background-color: #f2fdf6;
+  border: 1px solid #d9ebdc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(46, 139, 87, 0.1);
+}
+
+.input-group {
+  margin-bottom: 25px;
+  position: relative; /* This keeps the suggestions box inside it */
+}
+
+#plan-inputs label {
+  display: block;
+  font-weight: 600;
+  color: #2f4d3f;
+  margin-bottom: 6px;
+  font-size: 15px;
+}
+
+#plan-inputs input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #cce3d1;
+  border-radius: 6px;
+  font-size: 15px;
+  color: #2f4d3f;
+  background-color: #ffffff;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  box-sizing: border-box;
+}
+
+#plan-inputs input[type="text"]:focus {
+  border-color: #2e8b57;
+  box-shadow: 0 0 5px rgba(46, 139, 87, 0.2);
+  outline: none;
+}
+
+.suggestions {
+  position: absolute;
+  background: white;
+  border: 1px solid #d9ebdc;
+  border-top: none;
+  border-radius: 0 0 6px 6px;
+  max-height: 150px;
+  overflow-y: auto;
+  width: 100%; /* now it matches input */
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  display: none;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f2fdf6;
+}
+
+
+.suggestions div {
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.suggestions div:hover {
+  background-color: #f2fdf6;
+}
+
+
+/* Preferences Section */
+#plan-preferences {
+  max-width: 600px;
+  margin: 0 auto 50px auto;
+  padding: 20px;
+  background-color: #f2fdf6;
+  border: 1px solid #d9ebdc;
+  border-radius: 8px;
+}
+
+#plan-preferences h2 {
+  color: #2e8b57;
+  margin-bottom: 10px;
+}
+
+.plan-pref-group {
+  margin-bottom: 20px;
+}
+
+.plan-pref-group p {
+  font-weight: 600;
+  color: #2f4d3f;
+  margin-bottom: 5px;
+}
+
+.plan-pref-group label {
+  display: inline-block;
+  margin: 5px 10px 5px 0;
+  color: #1c3d2d;
+  font-size: 15px;
+}
+
+.plan-pref-group input[type="radio"] {
+  margin-right: 6px;
+}
+
+/* Show Results Button */
+.plan-submit-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#plan-show-button {
+  display: inline-block;
+  background-color: #2e8b57;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#plan-show-button:hover {
+  background-color: #246947;
+}
+
+/* === Results Page Styles === */
+/* Results Main Section */
+#results-main {
+  padding: 40px 20px;
+  background-color: #eaf4ec;
+  text-align: center;
+}
+
+/* Title */
+#results-main h2 {
+  color: #246947;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+/* Filter Dropdown */
+.filter-bar {
+  margin-bottom: 20px;
+}
+
+.filter-bar label {
+  font-weight: bold;
+  color: #2f4d3f;
+  margin-right: 10px;
+}
+
+.filter-bar select {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: 1px solid #aacdb1;
+  font-size: 14px;
+}
+
+/* Results list vertically */
+.results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Each card */
+#journey-card {
+  background-color: #ffffff;
+  border: 1px solid #cde3d4;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+#journey-card:hover {
+  transform: scale(1.02);
+}
+
+#journey-card h3 {
+  margin-bottom: 10px;
+  color: #2f4d3f;
+}
+
+#journey-card p {
+  margin: 6px 0;
+  color: #444;
+}
+
+#journey-card a {
+  color: #2d7e4c;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+/* Details Button */
+#details-btn,
+#back-button {
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+#details-btn:hover,
+#back-button:hover {
+  background-color: #218838;
+  transform: scale(1.03);
+}
+
+
+.eco-score {
+  font-weight: bold;
+  color: #2e8b57;
+}
+
+/* Back Button */
+#back-button {
+  margin-top: 30px;
+  display: inline-block; /* or use flex with justify-content */
+}
+
+#btn-back {
+  display: inline-block;
+  padding: 0px;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+/* === Details Page Styles === */
+#details-main {
+  padding: 30px;
+  text-align: center;
+}
+
+.detail-card {
+  display: flex;
+  align-items: flex-start;
+  background-color: #e7f6e7;
+  border-radius: 12px;
+  padding: 20px;
+  gap: 20px;
+  box-shadow: 0 0 10px rgba(0, 128, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.detail-icon {
+  font-size: 60px;
+  color: #2e7d32;
+}
+
+.detail-info {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.detail-info h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.detail-map img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.15);
+}
+
+.btn-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.back-button,
+.book-button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #388e3c;
+  color: white;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.back-button:hover,
+.book-button:hover {
+  background-color: #2e7d32;
+}
+
+
+/* === Saved Journeys Page Styles === */
+#saved-main {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* light background */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#saved-main h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+#savedContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.journey-card {
+  background-color: #ffffff;
+  border-left: 6px solid #2ecc71;
+  padding: 15px 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  text-align: left;
+  transition: transform 0.2s ease;
+}
+
+.journey-card:hover {
+  transform: scale(1.02);
+  background-color: #a7ecc5;
+}
+
+.journey-card h3 {
+  margin-top: 0;
+  color: #34495e;
+}
+
+.journey-card p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+  color: #555;
+}
+
+.btn-row {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.btn-back {
+  background-color: #74ca98;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #11ca5e;
+}
+
+
+/* === Contact Page Styles === */
+#contact-main {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.contact-info {
+  background-color: #e6f4e9;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  box-shadow: 0 0 8px rgba(0, 128, 0, 0.1);
+}
+
+.contact-form {
+  text-align: left;
+  background-color: #f4fff6;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(46, 125, 50, 0.1);
+}
+
+.contact-form h3 {
+  margin-top: 0;
+  color: #2e7d32;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #b9ddb9;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+#contact-button-center
+{
+  text-align: center;
+}
+
+#contact-submit {
+  margin-top: 20px;
+  background-color: #388e3c;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#contact-submit:hover {
+  background-color: #2e7d32;
+}
+
+/* Footer */
+#footer {
+  width: 100%;
+  background-color: #2e8b57;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  color: #ffffff;
+  position: relative;
+  bottom: 0;
+}

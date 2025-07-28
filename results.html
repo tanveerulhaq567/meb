@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Green Journey Advisor - Plan</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Banner Area -->
+  <section id="banner">
+    <div id="banner-icon">
+      <img src="images/icon.png" alt="Journey Icon">
+    </div>
+    <div id="banner-text">
+      <h1>Plan Your Journey</h1>
+    </div>
+  </section>
+
+  <!-- Navigation Bar -->
+  <nav id="navbar">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="journey.html" class="nav-link">Plan</a>
+    <a href="results.html" class="nav-link">Result</a>
+    <a href="details.html" class="nav-link">Detail</a>
+    <a href="saved.html" class="nav-link">Saved</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </nav>
+
+<main id="results-main">
+  <h2>Your Sustainable Travel Options</h2>
+
+  <!-- Filter Bar -->
+  <div class="filter-bar">
+    <label for="filter">Filter by:</label>
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="eco">Eco Score (High to Low)</option>
+      <option value="time">Travel Time (Low to High)</option>
+      <option value="cost">Cost (Low to High)</option>
+    </select>
+  </div>
+
+  <!-- This container will be filled dynamically -->
+  <div class="results-container" id="resultsContainer"></div>
+
+  <!-- Back Button -->
+  <div id="back-button">
+    <a href="journey.html" id="btn-back">← Back to Plan</a>
+  </div>
+</main>
+
+  <!-- Footer -->
+  <footer id="footer">
+    <p>&copy; 2025 Green Journey Advisor. All rights reserved.</p>
+  </footer>
+
+  <!-- Include JS files -->
+<script src="journeys.js"></script>
+<script src="results.js"></script>
+
+</body>
+</html>
