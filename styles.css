@@ -65,12 +65,13 @@ main, section {
   color: white;
   text-decoration: none;
   margin: 0 20px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 700;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #b2ffd3;
+  color:#f79448;
 }
 
 /* === Home Page Styles === */
@@ -143,17 +144,22 @@ main, section {
 }
 
 #home-start-button {
-  background-color: #2e8b57;
-  color: white;
-  padding: 12px 25px;
-  font-size: 16px;
-  text-decoration: none;
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #home-start-button:hover {
-  background-color: #246947;
+  background-color: #218838;
+  transform: scale(1.03);
 }
 
 /* === Journey Page Styles === */
@@ -275,19 +281,25 @@ main, section {
   margin: 30px 0;
 }
 
-#plan-show-button {
-  display: inline-block;
-  background-color: #2e8b57;
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  padding: 12px 30px;
+#plan-show-button
+ {
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border: none;
   border-radius: 8px;
-  transition: background-color 0.3s ease;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
 }
 
-#plan-show-button:hover {
-  background-color: #246947;
+#plan-show-button:hover
+{
+  background-color: #218838;
+  transform: scale(1.03);
 }
 
 /* === Results Page Styles === */
@@ -455,19 +467,23 @@ main, section {
 
 .back-button,
 .book-button {
-  padding: 10px 20px;
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
   border: none;
-  background-color: #388e3c;
-  color: white;
-  font-size: 16px;
   border-radius: 8px;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 .back-button:hover,
 .book-button:hover {
   background-color: #2e7d32;
+  transform: scale(1.03);
 }
 
 
@@ -527,17 +543,22 @@ main, section {
 }
 
 .btn-back {
-  background-color: #74ca98;
-  color: white;
-  padding: 10px 20px;
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
   text-decoration: none;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
 }
 
 .btn-back:hover {
-  background-color: #11ca5e;
+  background-color: #2e7d32;
+  transform: scale(1.03);
 }
 
 
@@ -594,18 +615,40 @@ main, section {
 }
 
 #contact-submit {
-  margin-top: 20px;
-  background-color: #388e3c;
-  color: white;
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
   border: none;
-  padding: 12px 20px;
-  font-size: 16px;
-  border-radius: 6px;
+  border-radius: 8px;
   cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
 }
 
 #contact-submit:hover {
   background-color: #2e7d32;
+  transform: scale(1.03);
+}
+
+.delete-btn {
+  background-color: #28a745; /* green to reflect eco theme */
+  color: #fff;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+}
+.delete-btn:hover {
+  background-color: #2e7d32;
+  transform: scale(1.03);
 }
 
 /* Footer */
